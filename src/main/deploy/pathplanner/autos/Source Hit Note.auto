@@ -1,0 +1,57 @@
+{
+  "version": 1.0,
+  "startingPose": {
+    "position": {
+      "x": 0.76,
+      "y": 4.41
+    },
+    "rotation": -60.0
+  },
+  "command": {
+    "type": "sequential",
+    "data": {
+      "commands": [
+        {
+          "type": "race",
+          "data": {
+            "commands": [
+              {
+                "type": "named",
+                "data": {
+                  "name": "shoot"
+                }
+              },
+              {
+                "type": "race",
+                "data": {
+                  "commands": [
+                    {
+                      "type": "wait",
+                      "data": {
+                        "waitTime": 1.0
+                      }
+                    },
+                    {
+                      "type": "named",
+                      "data": {
+                        "name": "transfer10.5s"
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "New New Path"
+          }
+        }
+      ]
+    }
+  },
+  "folder": null,
+  "choreoAuto": false
+}
